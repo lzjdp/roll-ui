@@ -1,7 +1,21 @@
 {
   "name": "roll-ui",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "author": "carr",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "keywords": [
+    "React",
+    "UI",
+    "Component"
+  ],
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lzjdp/roll-ui"    
+  },
+  "files": "dist",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
@@ -17,9 +31,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && npm run build-css",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build-css": "node-sass ./src/styles/index.scss ./dist/index.css"
   },
   "eslintConfig": {
     "extends": [
