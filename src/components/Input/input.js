@@ -1,5 +1,6 @@
 import React from 'react'
 import classname from 'classnames'
+<<<<<<< HEAD
 import './_style.scss'
 
 const Input = (props) => {
@@ -22,4 +23,17 @@ Input.defaultProps = {
     size: 'default'
 }
 
+=======
+import './_styles.scss'
+
+const Input = ({palceholder, className}) => {
+    const classes = classname('roll-input', className, {
+
+    })
+    return (
+        <input className={classes} placeholder={placeholder} />
+    )
+}
+
+>>>>>>> feature-input
 export default Input
