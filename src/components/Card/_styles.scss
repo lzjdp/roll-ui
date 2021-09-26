@@ -1,0 +1,16 @@
+@import '../../styles/_variable.scss';
+@import '../../styles/_mixin.scss';
+
+.card{
+    .card-title{
+        font-size: $font-size-lg;
+        border-bottom: $card-border-width solid $gray-500;
+        padding:  $card-padding;
+    }
+    .card-content{
+        padding: $card-padding;
+    }
+}
+.card-border{
+    border: $card-border-width solid $gray-500;
+}
